@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #605095;
+    font-family: sans-serif;
+    margin: auto;
+}
+
+#page-title p {
+    color: #ffffff;
+    font-size: 60px;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+#container {
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    color: #b07a63;
+    margin-bottom: 10rem;
+    padding: 1rem;
+}
+
+#container-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#container-heading #h1 {
+    font-size: 28px;
+}
+
+#container-heading #h2 {
+    font-size: 16px;
+    padding-top: 25px;
+    margin-bottom: 40px;
+}
+
+#field input {
+    height: 43px;
+    width: 291px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+#field input::placeholder {
+    font-size: 18px;
+    opacity: 0.3;
+    padding-left: 10px;
+}
+
+#values {
+    width: 291px;
+}
+
+#values li {
+    font-size: 18px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#field {
+    width: 85%;
+    padding-bottom: 3rem;
+}
+
+@media (min-width: 769px) {
+    #field {
+        padding-left: 2rem; /* Add margin to the left for wide screens */
+    }
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    #page-title p {
+        font-size: 40px;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    #container-heading #h1 {
+        font-size: 24px;
+    }
+
+    #container-heading #h2 {
+        font-size: 14px;
+    }
+
+    #field {
+        width: 100%;
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #page-title p {
+        font-size: 30px;
+    }
+
+    #container-heading #h1 {
+        font-size: 20px;
+    }
+
+    #container-heading #h2 {
+        font-size: 12px;
+    }
+
+    #field input {
+        width: 100%;
+    }
+
+    #values {
+        width: 100%;
+    }
+
+    #values li {
+        font-size: 16px;
+    }
+}
